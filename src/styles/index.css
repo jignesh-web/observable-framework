@@ -1,0 +1,27 @@
+@import url("observablehq:default.css");
+
+.custom-card {
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.custom-button,
+button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #eee;
+  border-radius: 0.5rem;
+  background-color: #eee;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.custom-button:hover,
+button:hover {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.2);
+}
