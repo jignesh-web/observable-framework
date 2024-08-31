@@ -17,8 +17,10 @@ This led to the launch of the first artificial satellite, Sputnik 1, and the cre
 ## The Space Shuttle era
 
 ```js
-import { timeline } from "./components/timeline.js";
-import { defineTable } from "./components/customTable.js";
+import "./twind-setup.js";
+
+import {timeline} from "./components/timeline.js";
+import {defineTable} from "./components/customTable.js";
 ```
 
 <div class="grid grid-cols-4">
@@ -28,9 +30,14 @@ import { defineTable } from "./components/customTable.js";
 </div>
 
 ```jsx
-import { Card } from "./components/Card.js";
+import {TailwindButton} from "./components/TailwindButton.js";
+display(<TailwindButton />);
+```
 
-display(<Card />);
+```jsx
+import {Table} from "./components/Table.js";
+
+display(<Table />);
 ```
 
 <!-- ```js
@@ -45,7 +52,7 @@ const events = FileAttachment("./data/events.json").json();
 ```
 
 ```js
-timeline(events, { height: 300 });
+timeline(events, {height: 300});
 ```
 
 ### Sputnik 1 (1957)
